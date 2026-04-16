@@ -1,0 +1,12 @@
+{
+  "name": "agenda-mvc",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "main.mjs",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "author": "",
+  "license": "ISC"
+}

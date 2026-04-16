@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <h1>Agenda de Contatos</h1>
+
+  <h2>Adicionar Contato</h2>
+  <form id="form-contato" novalidate>
+    <div>
+      <label for="input-nome">Nome completo</label><br />
+      <input type="text" id="input-nome" autocomplete="off" />
+      <span id="erro-nome" style="color:red; display:none;"></span>
+    </div>
+    <br />
+    <div>
+      <label for="input-telefone">Telefone</label><br />
+      <input type="tel" id="input-telefone" />
+      <span id="erro-telefone" style="color:red; display:none;"></span>
+    </div>
+    <br />
+    <div>
+      <label for="input-email">E-mail</label><br />
+      <input type="email" id="input-email" />
+      <span id="erro-email" style="color:red; display:none;"></span>
+    </div>
+    <br />
+    <button type="submit">Adicionar Contato</button>
+  </form>
+
+  <hr />
+
+  <h2>Contatos Salvos</h2>
+
+
+  <table border="1" id="tabela-contatos" style="display:none;">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>E-mail</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="lista-contatos"></tbody>
+  </table>
+
+  <script type="module" src="main.mjs"></script>
+</body>
+</html>
